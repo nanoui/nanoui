@@ -1,6 +1,5 @@
 node_modules
 .github
 .gitignore
-.npmignore
 .src
 .storybook
