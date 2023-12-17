@@ -29,6 +29,7 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
+          github_token: ${{ secrets.git_token }}
           branch: ${{ github.ref }}
 
       - name: Publish package on NPM 📦
