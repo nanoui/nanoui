@@ -29,10 +29,10 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.git_token }}
+          github_token: ${{ secrets.GIT_TOKEN }}
           branch: ${{ github.ref }}
 
       - name: Publish package on NPM 📦
         run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.npm_publish }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH }}
