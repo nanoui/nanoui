@@ -8,7 +8,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "updateversion": "npx auto-version"
     },
-    "version": "1.0.3",
+    "version": "1.0.4",
     "author": "",
     "license": "ISC",
     "homepage": "https://github.com/atikur-rabbi/npm_publish#readme",
