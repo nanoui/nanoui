@@ -1,0 +1,19 @@
+{
+    "main": "dist/index.js",
+    "name": "nanoui",
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "updateversion": "npx auto-version"
+    },
+    "version": "1.0.3",
+    "author": "",
+    "license": "ISC",
+    "homepage": "https://github.com/atikur-rabbi/npm_publish#readme",
+    "description": "",
+    "devDependencies": {
+        "auto-version-js": "^0.3.10"
+    }
+}
