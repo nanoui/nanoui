@@ -1,7 +1,7 @@
 node_modules
 .github
 .gitignore
-.src
+src
 .storybook
 rollup.config.js
 package.json
