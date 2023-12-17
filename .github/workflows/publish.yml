@@ -20,6 +20,9 @@ jobs:
       - name: update version
         run: npx auto-version
 
+      - name: Build
+        run: npm run build
+
       # Commit changes and push to the branch
       - name: Commit files
         run: |
