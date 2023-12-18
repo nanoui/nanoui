@@ -41,12 +41,22 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH }}
       
-      - name: Publish storybook-static floder to nanoui.github.io repo
+      # - name: Publish storybook-static floder to nanoui.github.io repo
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GIT_TOKEN }}
+      #     publish_dir: ./storybook-static
+      #     publish_branch: gh-pages
+      #     force_orphan: true
+      #     enable_jekyll: false
+      #     commit_message: "Deploy nanoui"
+
+      - name: Deploy 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GIT_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./storybook-static
-          publish_branch: gh-pages
-          force_orphan: true
-          enable_jekyll: false
-          commit_message: "Deploy nanoui"
+          external_repository: nanoui/nanoui.github.io
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'Update Storybook [ci skip]'
