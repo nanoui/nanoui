@@ -1,13 +1,12 @@
 // src/components/Button1/index.js
 import React from 'react';
 
-export  const SimpleButton = ({  label, ...props }) => {
+function SimpleButton(props) {
     return (
-      <button
-        type="button"
-        {...props}
-      >
-        {label}
-      </button>
+        <button onClick={props.onClick}>
+            {props.children}
+        </button>
     );
-  };
+}
+
+export { SimpleButton };
