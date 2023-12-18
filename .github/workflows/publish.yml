@@ -40,3 +40,13 @@ jobs:
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH }}
+      
+      - name: Publish storybook-static floder to nanoui.github.io repo
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GIT_TOKEN }}
+          publish_dir: ./storybook-static
+          publish_branch: gh-pages
+          force_orphan: true
+          enable_jekyll: true
+          commit_message: "Deploy nanoui"
