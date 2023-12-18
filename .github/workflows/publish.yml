@@ -51,12 +51,12 @@ jobs:
       #     enable_jekyll: false
       #     commit_message: "Deploy nanoui"
 
-      - name: Deploy 🚀
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GIT_TOKEN }}
-          publish_dir: ./storybook-static
-          external_repository: nanoui/nanoui.github.io
-          user_name: 'atikur-rabbi'
-          user_email: 'msawon94@gmail.com'
-          commit_message: 'Update Storybook [ci skip]'
+      # - name: Deploy 🚀
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GIT_TOKEN }}
+      #     publish_dir: ./storybook-static
+      #     external_repository: nanoui/nanoui.github.io
+      #     user_name: 'atikur-rabbi'
+      #     user_email: 'msawon94@gmail.com'
+      #     commit_message: 'Update Storybook [ci skip]'
