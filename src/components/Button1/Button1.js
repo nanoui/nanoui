@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Button1(props) {
+function SimpleButton(props) {
     return (
         <button onClick={props.onClick}>
             {props.children}
@@ -8,4 +8,4 @@ function Button1(props) {
     );
 }
 
-export default Button1;
+export default SimpleButton;
