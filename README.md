@@ -1,11 +1,36 @@
-# nanoui.github.io
-
-```javascript
-npx storybook@latest init
-npm i rollup rollup-plugin-babel rollup-plugin-peer-deps-external 
-rollup-plugin-postcss rollup-plugin-terser @rollup/plugin-node-resolve --save-dev
-npm i @babel/core @babel/preset-react --save-dev
-```
+# nanoui
 
 # Docs
 [nanoui](https://www.unpkg.com/nanoui/storybook-static/index.html)
+
+# Install
+```javascript
+npm i nanoui
+```
+
+# Usage
+```javascript
+import { Button } from 'nanoui'
+```
+
+# Demo
+```javascript
+import React from 'react';
+import { Button, SimpleButton } from 'nanoui';
+
+export default function App() {
+  let color1 = '#730707';
+  return (
+    <div>
+      <Button
+        backgroundColor={color1}
+        label="Button"
+        onClick={function noRefCheck() {}}
+        primary
+      />
+      <SimpleButton>Hello</SimpleButton>
+    </div>
+  );
+}
+
+```
