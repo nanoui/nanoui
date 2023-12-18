@@ -1,4 +1,4 @@
-# nanoui
+# nanoui lib
 
 # Docs
 [nanoui](https://www.unpkg.com/nanoui/storybook-static/index.html)
