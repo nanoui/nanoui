@@ -57,6 +57,6 @@ jobs:
           github_token: ${{ secrets.GIT_TOKEN }}
           publish_dir: ./storybook-static
           external_repository: nanoui/nanoui.github.io
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
+          user_name: 'atikur-rabbi'
+          user_email: 'msawon94@gmail.com'
           commit_message: 'Update Storybook [ci skip]'
